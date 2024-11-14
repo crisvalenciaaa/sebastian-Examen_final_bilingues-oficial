@@ -1,0 +1,59 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+
+.ruleta {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.circulo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.circulo img:nth-child(1) {
+    transform: rotate(0deg) translate(130px);
+}
+
+.circulo img:nth-child(2) {
+    transform: rotate(90deg) translate(130px);
+}
+
+.circulo img:nth-child(3) {
+    transform: rotate(180deg) translate(130px);
+}
+
+.circulo img:nth-child(4) {
+    transform: rotate(270deg) translate(130px);
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
